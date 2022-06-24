@@ -2,27 +2,58 @@ body {
   font-family: 'Barlow';
 }
 
-/* STYLE THE TOP NAVIGATION BAR */
-.topnav {
-  overflow: hidden;
+/* DARK MODE TOGGLE */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* NAVIGATION */
+.nav {
+  background-color: black;
+  height: 34px;
+}
+
+.dropbtn {
   background-color: rgb(0, 0, 0);
+  border: 3px solid black;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* STYLE THE TOPLINKS NAV */
-.topnav a {
+.dropdown {
   float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
-/* CHANGE COLOR ON HOVER */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 3px solid black;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
 }
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #1d70b8;}
+
+.show {display: block;}
+
+
+/* HEADER */
   .homepage-header {
     background-color: #1d70b8;
     color: white;
