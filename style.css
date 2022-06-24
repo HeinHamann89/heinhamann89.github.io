@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0c0c;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #0b0c0c;
+    color: #white;
+  }
+
+  .homepage-header {
+    background-color: #1d70b8;
+    color: white;
+}
+.homepage-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
