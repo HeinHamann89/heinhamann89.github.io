@@ -1,10 +1,14 @@
-/* Style the top navigation bar */
+body {
+  font-family: 'Barlow';
+}
+
+/* STYLE THE TOP NAVIGATION BAR */
 .topnav {
   overflow: hidden;
   background-color: rgb(0, 0, 0);
 }
 
-/* Style the topnav links */
+/* STYLE THE TOPLINKS NAV */
 .topnav a {
   float: right;
   display: block;
@@ -14,7 +18,7 @@
   text-decoration: none;
 }
 
-/* Change color on hover */
+/* CHANGE COLOR ON HOVER */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -23,12 +27,20 @@
     background-color: #1d70b8;
     color: white;
 }
+
+h1.header-h1 {
+    font-size: 40px;
+    font-family: barlow-semibold;
+}
+
 .homepage-container {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
 }
 
+
+/* ABOUT ME SECTION */
 .aboutme-container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -38,7 +50,7 @@
 .projects-list {
   list-style-type: none;
   list-style: none;
-  padding: 0 0 40px 0;
+  padding: 0 0 0 0;
 }
 
 .project-1 {
@@ -48,6 +60,55 @@
 }
 
 .project-2 {
+  font-size: large;
   font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.project-3 {
+  font-size: large;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.project-4 {
+  font-size: large;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.project-5 {
+  font-size: large;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* TWO EQUAL COLUMNS FLOATING NEXT TO EACH OTHER */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* CLEAR FLOATS AFTER COLUMNS */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* RESPONSEIVE LAYOUT _ STACK COLUMNS */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.two-columns {
   padding-bottom: 10px;
 }
