@@ -24,7 +24,8 @@ body {
 }
 
 .dropdown {
-  float: right;
+  float: none;
+  padding-left: 10px;
   position: relative;
   display: inline-block;
 }
