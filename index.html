@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Document</title>
+   <script src="index.js"></script>
+   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<!-- JAVASCRIPT LINK --->    
-<script src="index.js"></script>
-
-<!-- NAVIGATION MENU --->
-<div class="nav">
-  <div class="dropdown">
-    <button onclick="darkMode()">Toggle dark mode</button>
-   <button onclick="myFunction()" class="dropbtn">Menu</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#LinkedIn">LinkedIn</a>
-      <a href="#Github">Github</a>
-     <a href="#Email Me">Email me</a>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Heinrich</a>
+    <a href="#">Projects</a>
+    <div class="dropdown">
+      <button class="dropbtn">Socials
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://github.com/HeinHamann89" target="_blank">Github</a>
+        <a href="https://www.instagram.com/heinrichvictorhamann/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/heinrich-hamann-86614a113/" target="_blank">LinkedIn</a>
+      </div>
     </div>
-  </div>
-</div>
-
-<!--- HEADER --->
-<header class="homepage-header">
-<div class="homepage-container">
-    <h1 class="header-h1">Heinrich Hamann</h1>
-    <p class="header-p">Front end developer and digital marketing manager</p>
-</div>
-</header>
-
-<!--- PROJECT SECTION--->
-<section>
-    <div class="aboutme-container">
-        <h2 class="aboutme-h2">My Projects</h2>
-        <ul class="projects-list">
-          <li class="project-1"><a href="###">Cyferd Campaign</a></li>
-          <li class="project-2"><a href="###">Focus Group</a></li>
-          <li class="project-3"><a href="###">Ozow</a></li>
-          <li class="project-4"><a href="###">Overline</a></li>
-          <li class="project-5"><a href="###">My Wordle (BETA)</a></li>
-        </ul>
+    <div class="dropdown">
+      <button class="dropbtn">Contact
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="tel:07935110340" target="_blank">Call</a>
+        <a href="mailto:heinrichvhamann@gmail.com" target="_blank">Email</a>
+      </div>
     </div>
-</section>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
-<!--- TWO COLUMNS SECTION --->
-<section class="two-columns">
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <button onclick="toggleDarkMode()" class="darkmode-toggle">Toggle Mode 👀</button>
+  <br>
+  <img src="hein.jpeg" alt="Heinrich Hamann" height="150px" class="profile-picture">
+  <h1>Heinrich Hamann</h1>
+  <p class="hero-p">I'm a Frontend developer based in Brighton and working in London, United Kingdom.<br>I love creating simple, easy-to-use websites and applications.</p>
+  <br>
+  <h2>My Projects</h2>
+  <div class="links-container">
+    <a href="https://focusgroup.co.uk/" class="link-block" target="_blank">Focus Group Website</a>
+    <a href="https://github.com/HeinHamann89/Password-Generator" class="link-block" target="_blank">Password Generator</a>
+    <a href="https://github.com/HeinHamann89/Userbase-Auth" class="link-block" target="_blank">Auth via Userbase</a>
+    <a href="https://outlierventures.io/" class="link-block" target="_blank">Outlier Ventures Website</a>
+    <a href="https://github.com/HeinHamann89/OV-Quiz" class="link-block" target="_blank">Quiz App with Twitter results share</a>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-</section>
 
 </body>
 </html>
