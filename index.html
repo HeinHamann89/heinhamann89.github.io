@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <title>Document</title>
-   <script src="index.js"></script>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
+    <title>Heinrich Hamann</title>
 </head>
 <body>
 
-  <div class="topnav" id="myTopnav">
-    <a href="#" class="active">Heinrich</a>
-    <a href="#">Projects</a>
-    <div class="dropdown">
-      <button class="dropbtn">Socials
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="https://github.com/HeinHamann89" target="_blank">Github</a>
-        <a href="https://www.instagram.com/heinrichvictorhamann/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/heinrich-hamann-86614a113/" target="_blank">LinkedIn</a>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Blog</a>
+      <a href="#contact">Portfolio</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#"><iconify-icon icon="twemoji:atom-symbol"></iconify-icon> Web Development</a>
+          <a href="#"><iconify-icon icon="twemoji:magnifying-glass-tilted-right"></iconify-icon> SEO</a>
+          <a href="#"><iconify-icon icon="twemoji:robot"></iconify-icon> AI Integration</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      <a href="#about" class="navbarCTA">CONTACT</a>
+    </div>
+  </header>
+
+<section>
+    <div class="homepage-hero">
+      <p class="hero-emoji"><iconify-icon icon="twemoji:waving-hand"></iconify-icon> <iconify-icon icon="twemoji:victory-hand"></iconify-icon> <iconify-icon icon="twemoji:clapping-hands"></iconify-icon></p>
+      <h1 class="hero-h1">Your <a href="#">websites</a>, <a href="#">designs </a>and <a href="#">search </a>all together.</h1>
+      <br>
+      <p class="hero-p">We build fast, UX friendly websites that users love. And we now integrate it with AI <iconify-icon icon="twemoji:sparkles"></iconify-icon></p>
+      <br>
+      <br>
+      <a href="#" class="hero-cta">GET STARTED</a>&nbsp;&nbsp;<a href="#" class="hero-cta" id="hero-cta-right">SEE EXAMPLES</a>
+      <br>
+      <br>
+    </div>
+    <div class="homepage-container">
+      <h2>Together we'll..</h2>
+      <br>
+      <p>Hey! I build engaging, easy-to-use websites and applications. Let's make your digital idea a reality, together.</p>
+      <br>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Desing your dream wireframe</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Buid UX friendly website</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Write engaging copy</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Plan high converting marketing campaigns</p>
+      <br>
+      <br>
+      <h2>Key Services</h2>
+      <br>
+      <div class="scrollmenu">
+        <a href="#home">👨‍💻&nbsp;&nbsp;Web Development</a>
+        <a href="#news">📊&nbsp;&nbsp;Data Visualization</a>
+        <a href="#contact">🔎&nbsp;&nbsp;SEO</a>
+        <a href="#about">✏️&nbsp;&nbsp;Graphic Design</a>
+        <a href="#home">🤖&nbsp;&nbsp;AI Integration</a>
+        <a href="#news">🚀&nbsp;&nbsp;Growth Marketing</a>
+        <a href="#contact">✉️&nbsp;&nbsp;Email Marketing</a>
       </div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Contact
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="tel:07935110340" target="_blank">Call</a>
-        <a href="mailto:heinrichvhamann@gmail.com" target="_blank">Email</a>
-      </div>
+    <div class="flex-container">
+      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>Over £4 million</h2>
+        <br>
+        <br>
+      <p>generated in pipeline value in 2022 for companies.</p></div>
+      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>11+ years</h2>
+        <br>
+        <br>
+        <p>experience working with sales & marketing teams.</p></div>
+      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>17 & growing</h2>
+        <br>
+        <br>
+        <p>amazing partners across 4 continents and time zones.</p></div>  
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-  <button onclick="toggleDarkMode()" class="darkmode-toggle">Toggle Mode 👀</button>
-  <br>
-  <img src="hein.jpeg" alt="Heinrich Hamann" height="150px" class="profile-picture">
-  <h1>Heinrich Hamann</h1>
-  <p class="hero-p">I'm a Frontend developer based in Brighton and working in London, United Kingdom.<br>I love creating simple, easy-to-use websites and applications.</p>
-  <br>
-  <h2>My Projects</h2>
-  <div class="links-container">
-    <a href="https://focusgroup.co.uk/" class="link-block" target="_blank">Focus Group Website</a>
-    <a href="https://github.com/HeinHamann89/Password-Generator" class="link-block" target="_blank">Password Generator</a>
-    <a href="https://github.com/HeinHamann89/Userbase-Auth" class="link-block" target="_blank">Auth via Userbase</a>
-    <a href="https://outlierventures.io/" class="link-block" target="_blank">Outlier Ventures Website</a>
-    <a href="https://github.com/HeinHamann89/OV-Quiz" class="link-block" target="_blank">Quiz App with Twitter results share</a>
-  </div>
-
+</section>
+<footer>Made with <iconify-icon icon="twemoji:red-heart"></iconify-icon> by Heinrich</footer>
 </body>
 </html>
