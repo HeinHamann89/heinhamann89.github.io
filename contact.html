@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <title>Heinrich Hamann</title>
+</head>
+<body>
+
+  <header>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Blog</a>
+    <a href="#contact">Portfolio</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#"><iconify-icon icon="twemoji:atom-symbol"></iconify-icon> Web Development</a>
+        <a href="#"><iconify-icon icon="twemoji:magnifying-glass-tilted-right"></iconify-icon> SEO</a>
+        <a href="#"><iconify-icon icon="twemoji:robot"></iconify-icon> AI Integration</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="#about" class="navbarCTA">CONTACT</a>
+  </div>
+</header>
+
+<section>
+  <div class="homepage-hero">
+    <p class="hero-emoji"><iconify-icon icon="twemoji:incoming-envelope"></iconify-icon></p>
+    <h1>Get in contact</h1>
+    <br>
+    <p>Get in contact today so we can start building your dream digital experience.</p>
+  </div>
+  <div class="homepage-container">
+    <h2>Submit this short form <iconify-icon icon="twemoji:down-arrow"></iconify-icon></h2>
+    <br>
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1718cb43-6953-475d-b49c-c918d96bc13f">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Choose a Service</label>
+        <select id="country" name="country">
+          <option value="australia">Web development</option>
+          <option value="canada">Copy writing</option>
+          <option value="usa">Search Engine Optmisisation</option>
+          <option value="australia">All of the above</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="SUBMIT">
+    
+      </form>
+    </div>
+    <br>
+    <h2>More contact details</h2>
+    <br>
+    <p>Email</p>
+    <a href="mailto:heinrichvhamann@gmail.com">heinrichvhamann@gmail.com</a>
+    <br>
+    <br>
+    <p>Phone number</p>
+    <a href="tel:07935110340">079 3511 0340</a>
+    <br>
+    <br>
+    <p>LinkedIn</p>
+    <a href="https://www.linkedin.com/in/heinrich-hamann-86614a113/">heinrichhamann89</a>
+  </div>
+</section>
+<footer>Made with <iconify-icon icon="twemoji:red-heart"></iconify-icon> by Heinrich</footer>
+</body>
+</html>
