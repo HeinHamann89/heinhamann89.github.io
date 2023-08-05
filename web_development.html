@@ -6,96 +6,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-    <title>Heinrich Hamann</title>
+    <title>🛜 Web Development</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
 
   <header>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">Blog</a>
-      <a href="#contact">Portfolio</a>
+      <a href="./index.html" class="active">HH</a>
+      <a href="./about.html">Mission</a>
+      <a href="./news.html">Blog</a>
+      <a href="./portfolio.html">Portfolio</a>
       <div class="dropdown">
         <button class="dropbtn">Services
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#"><iconify-icon icon="twemoji:atom-symbol"></iconify-icon> Web Development</a>
-          <a href="#"><iconify-icon icon="twemoji:magnifying-glass-tilted-right"></iconify-icon> SEO</a>
-          <a href="#"><iconify-icon icon="twemoji:robot"></iconify-icon> AI Integration</a>
+          <a href="./web_development.html"><iconify-icon icon="twemoji:atom-symbol"></iconify-icon> Web Development</a>
+          <a href="./design.html"><iconify-icon icon="twemoji:writing-hand"></iconify-icon> Design</a>
+          <a href="./seo.html"><iconify-icon icon="twemoji:magnifying-glass-tilted-right"></iconify-icon> SEO</a>
         </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      <a href="#about" class="navbarCTA">CONTACT</a>
+      <a href="./contact.html" class="navbarCTA">CONTACT</a>
     </div>
   </header>
 
 <section>
     <div class="homepage-hero">
       <p class="hero-emoji"><iconify-icon icon="twemoji:atom-symbol"></iconify-icon></p>
-      <h1>Web development</h1>
       <br>
-      <h2 class="web-development-gradient">Your Website, Your Way.</h2>
+      <h1>Web Development</h1>
+      <h2 class="web-development-gradient">Your Website. Your Way.</h2>
       <br>
-      <p>The process is simple...</p>
+      <p>Let's start with the...</p>
       <br>
+      <span class="tag-cloud"><a href="#why" style="text-decoration: none; color: #fff;">Why</a></span>&nbsp;<span class="tag-cloud"><a href="#how" style="text-decoration: none; color: #fff;">How</a></span>&nbsp;<span class="tag-cloud"><a href="#who" style="text-decoration: none; color: #fff;">Who</a></span>
     </div>
-
+    <div class="homepage-container">
+      <span class="tag-cloud" id="#why" style="background-color: #f7bc00 !important; color: #fff;">Why work with us</span>
+      <h2>Reasons to work together</h2>
+      <br>
+      <p>Your website must be fast, efficient and creative. That's we do.</p>
+      <br>
+      <br>
+      <h3>Benefits:</h3>
+      <br>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Fast, efficient website</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> UX and user friendly</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> SEO optimised</p>
+      <p><iconify-icon icon="twemoji:check-mark-button"></iconify-icon> Low cost, easy to maintain</p>
+    </div>
     <div class="flex-container">
-      <div style="flex-grow: 1; color: white; background-color: blue;"><iconify-icon icon="twemoji:writing-hand"></iconify-icon><h2>Design</h2>
+      <div style="flex-grow: 1;"><h2>17+ partners</h2></div>
+      <div style="flex-grow: 1;"><h2>Customer success</h2></div>
+      <div style="flex-grow: 1;"><h2>High growth</h2></div>  
+    </div>
+    <div class="homepage-container">
+      <span class="tag-cloud" id="how" style="background-color: #f7bc00 !important; color: #fff;">How we work</span>
+      <h2>The process is simple...</h2>
+    <br>
+    <p>We work in three easy steps to help you get from idea to production.</p>
+    <br>
+    </div>
+    <div class="flex-container">
+      <div style="flex-grow: 1; background-color: blue;"><iconify-icon icon="twemoji:writing-hand" class="flex-emoji"></iconify-icon><h2>Design</h2>
         <br>
         <br>
       <p>It all starts with an idea, and getting it down on paper. We'll draw, visualise and map out what you want.</p></div>
-      <div style="flex-grow: 1; color: white; background-color: blueviolet;"><iconify-icon icon="twemoji:hammer-and-wrench"></iconify-icon><h2>Build</h2>
+      <div style="flex-grow: 1; background-color: blueviolet;"><iconify-icon icon="twemoji:hammer-and-wrench" class="flex-emoji"></iconify-icon><h2>Build</h2>
         <br>
         <br>
         <p>Building time will be scoped, amendments communicated and your project will be delivered and LIVE on time.</p></div>
-      <div style="flex-grow: 1; color: white; background-color: violet;"><iconify-icon icon="twemoji:gear"></iconify-icon><h2>Maintain</h2>
+      <div style="flex-grow: 1; background-color: violet;"><iconify-icon icon="twemoji:gear" class="flex-emoji"></iconify-icon><h2>Maintain</h2>
         <br>
         <br>
         <p>Websites evolve, and you will always have access to changes when and where you request and require.</p></div>  
     </div>
-
     <div class="homepage-container">
-      <h2>Reasons to work with me</h2>
-      <br>
-      <p>Your website must be fast, efficient and creative. That is what I do.</p>
-      <br>
-      <h3>Benefits:</h3>
-      <ul>
-        <li>Fast, user-friendly websites</li>
-        <li>Tailored to your specific needs</li>
-        <li>Optimized for search engines</li>
-        <li>Easy to use for visitors</li>
-        <li>Experienced web developer</li>
-      </ul>
+      <span class="tag-cloud" id="who" style="background-color: #f7bc00 !important; color: #fff;">Who worked with us</span>
+      <h2>Performance based websites</h2>
+    <br>
+    <p>See our <a href="./portfolio.html" style="color: #a855f7; text-decoration: none;">full portfolio</a> here</p>
+    <br>
     </div>
-
-    <h2>High performing websites</h2>
-    <br>
-    <p>You can see more on my <a href="#">full portfolio</a> here</p>
-    <br>
     <div class="flex-container">
-      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>Over £4 million</h2>
+      <div style="flex-grow: 1;"><h2>Focus Group</h2>
         <br>
         <br>
-      <p>generated in pipeline value in 2022 for companies.</p></div>
-      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>11+ years</h2>
+      <a href="#" style="background-color: #a855f7; padding: 4px 10px; color: #fff; border-radius: 4px; text-decoration: none;">See Website</a></div>
+      <div style="flex-grow: 1;"><h2>Outlier Ventures</h2>
         <br>
         <br>
-        <p>experience working with sales & marketing teams.</p></div>
-      <div style="flex-grow: 1; color: #fff; background-color: #a855f7;"><h2>17 & growing</h2>
+        <a href="#" style="background-color: #a855f7; padding: 4px 10px; color: #fff; border-radius: 4px; text-decoration: none;">See Website</a></div>
+      <div style="flex-grow: 1;"><h2>OZOW Pay</h2>
         <br>
         <br>
-        <p>amazing partners across 4 continents and time zones.</p></div>  
+        <a href="#" style="background-color: #a855f7; padding: 4px 10px; color: #fff; border-radius: 4px; text-decoration: none;">See Website</a></div>  
     </div>
 
 </section>
-<footer>Made with <iconify-icon icon="twemoji:red-heart"></iconify-icon> by Heinrich</footer>
+<footer>Made with <iconify-icon icon="twemoji:red-heart"></iconify-icon> by <span style="font-weight: 900;">HH</span></footer>
 </body>
 </html>
