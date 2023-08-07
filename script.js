@@ -1,6 +1,7 @@
 twemoji.parse(document.body);
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+// NAV MENU
+// Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -10,7 +11,7 @@ function myFunction() {
   }
 }
 
-/* PORTFOLIO SECTION */
+// PORTFOLIO SECTION
   filterSelection("all")
   function filterSelection(c) {
     var x, i;
@@ -74,4 +75,10 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// ACCORDION
+function toggleAccordion(sectionNumber) {
+  const content = document.getElementById(`content-${sectionNumber}`);
+  content.classList.toggle("show");
 }
